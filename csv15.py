@@ -13,6 +13,6 @@ try:
             for row in reader:
                 print(",".join(row[col] for col in columns_to_read))
 except FileNotFoundError:
-    print(f"Error: file '{file_name}' not found")  # Fixed error message
+    print(f"Error: file '{file_name}' not found") 
 except Exception as e:
     print(f"An error occurred: {e}")
